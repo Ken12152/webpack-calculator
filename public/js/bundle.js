@@ -10,13 +10,33 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/component/ButtonFunc.jsx":
+/*!**************************************!*\
+  !*** ./src/component/ButtonFunc.jsx ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function (props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    type: \"button\",\n    onClick: function onClick() {\n      return props.func();\n    }\n  }, props.label);\n});\n\n//# sourceURL=webpack://webpack-calculator/./src/component/ButtonFunc.jsx?");
+
+/***/ }),
+
+/***/ "./src/component/helloworld.js":
+/*!*************************************!*\
+  !*** ./src/component/helloworld.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"helloworld\": () => /* binding */ helloworld\n/* harmony export */ });\nvar helloworld = function helloworld() {\n  var helloTag = '<h1>Hello, World</h1>';\n  document.getElementById('root').innerHTML = helloTag;\n};\n\n//# sourceURL=webpack://webpack-calculator/./src/component/helloworld.js?");
+
+/***/ }),
+
 /***/ "./src/index.jsx":
 /*!***********************!*\
   !*** ./src/index.jsx ***!
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var _main_App_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./main/App.jsx */ \"./src/main/App.jsx\");\n\n\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_main_App_jsx__WEBPACK_IMPORTED_MODULE_2__.default, null), document.getElementById('root'));\n\n//# sourceURL=webpack://webpack-calculator/./src/index.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var _main_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./main/App */ \"./src/main/App.jsx\");\n\n\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_main_App__WEBPACK_IMPORTED_MODULE_2__.default, null), document.getElementById('root'));\n\n//# sourceURL=webpack://webpack-calculator/./src/index.jsx?");
 
 /***/ }),
 
@@ -26,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _component_helloworld__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../component/helloworld */ \"./src/component/helloworld.js\");\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function (props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    type: \"button\",\n    onClick: function onClick() {\n      return (0,_component_helloworld__WEBPACK_IMPORTED_MODULE_1__.helloworld)();\n    }\n  }, \"Hello!\"));\n});\n\n//# sourceURL=webpack://webpack-calculator/./src/main/App.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _component_ButtonFunc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../component/ButtonFunc */ \"./src/component/ButtonFunc.jsx\");\n/* harmony import */ var _component_helloworld__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../component/helloworld */ \"./src/component/helloworld.js\");\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function (props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_component_ButtonFunc__WEBPACK_IMPORTED_MODULE_1__.default, {\n    func: _component_helloworld__WEBPACK_IMPORTED_MODULE_2__.helloworld,\n    label: \"Hello, World!\"\n  }));\n});\n\n//# sourceURL=webpack://webpack-calculator/./src/main/App.jsx?");
 
 /***/ }),
 
@@ -117,16 +137,6 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ \"./node_modules/scheduler/cjs/scheduler-tracing.development.js\");\n}\n\n\n//# sourceURL=webpack://webpack-calculator/./node_modules/scheduler/tracing.js?");
-
-/***/ }),
-
-/***/ "./src/component/helloworld.js":
-/*!*************************************!*\
-  !*** ./src/component/helloworld.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"helloworld\": () => /* binding */ helloworld\n/* harmony export */ });\nconst helloworld = () => document.getElementById('root').innerHTML = '<h1>Hello, World!</h1>'\r\n\n\n//# sourceURL=webpack://webpack-calculator/./src/component/helloworld.js?");
 
 /***/ })
 
